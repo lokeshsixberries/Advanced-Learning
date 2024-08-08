@@ -1,8 +1,5 @@
 Log in to GitHub:
-
-
-
-gh auth login
+```gh auth login
 Log out from GitHub:
 
 
