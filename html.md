@@ -91,3 +91,55 @@ Here is a comprehensive list of HTML tags with examples and attributes:
 | **`<datalist>`** | `<datalist><option value="Option 1"/><option value="Option 2"/></datalist>` | N/A                                 |
 | **`<fieldset>`** | `<fieldset><legend>Legend</legend><input/></fieldset>`      | `disabled`, `form`, `name`          |
 | **`<legend>`** | `<legend>Fieldset Legend</legend>`                            | N/A                                 |
+
+### Inline Tags
+
+| **Tag**   | **Example**                                                   | **Attributes**                       |
+|-----------|---------------------------------------------------------------|-------------------------------------|
+| **`<b>`** | `<b>Bold text</b>`                                           | N/A                                 |
+| **`<i>`** | `<i>Italic text</i>`                                         | N/A                                 |
+| **`<u>`** | `<u>Underlined text</u>`                                     | N/A                                 |
+| **`<s>`** | `<s>Strikethrough text</s>`                                  | N/A                                 |
+| **`<small>`** | `<small>Smaller text</small>`                               | N/A                                 |
+| **`<mark>`** | `<mark>Highlighted text</mark>`                             | N/A                                 |
+| **`<strong>`** | `<strong>Important text</strong>`                           | N/A                                 |
+| **`<em>`** | `<em>Emphasized text</em>`                                   | N/A                                 |
+
+### Deprecated and Obsolete Tags
+
+| **Tag**   | **Example**                                                   | **Attributes**                       |
+|-----------|---------------------------------------------------------------|-------------------------------------|
+| **`<font>`** | `<font color="red">Colored text</font>`                      | `color`, `size`, `face`              |
+| **`<center>`** | `<center>Centered text</center>`                            | N/A                                 |
+| **`<u>`** | `<u>Underlined text</u>`                                     | N/A                                 |
+
+### Embedding and Scripting Tags
+
+| **Tag**   | **Example**                                                   | **Attributes**                       |
+|-----------|---------------------------------------------------------------|-------------------------------------|
+| **`<object>`** | `<object data="file.pdf" type="application/pdf"></object>`   | `data`, `type`, `width`, `height`    |
+| **`<embed>`** | `<embed src="video.mp4" type="video/mp4" width="400" height="300">` | `src`, `type`, `width`, `height`    |
+| **`<param>`** | `<param name="autoplay" value="true">`                       | `name`, `value`                     |
+| **`<source>`** | `<source src="video.mp4" type="video/mp4">`                  | `src`, `type`                       |
+| **`<base>`** | `<base href="https://example.com/">`                         | `href`, `target`                    |
+
+### Text and Grouping Tags
+
+| **Tag**   | **Example**                                                   | **Attributes**                       |
+|-----------|---------------------------------------------------------------|-------------------------------------|
+| **`<blockquote>`** | `<blockquote cite="https://example.com">Quoted text</blockquote>` | `cite`                              |
+| **`<q>`** | `<q>Quoted text</q>`                                         | `cite`                              |
+| **`<code>`** | `<code>Code snippet</code>`                                 | N/A                                 |
+| **`<samp>`** | `<samp>Sample output</samp>`                                | N/A                                 |
+| **`<kbd>`** | `<kbd>Keyboard input</kbd>`                                  | N/A                                 |
+| **`<pre>`** | `<pre>Preformatted text</pre>`                               | N/A                                 |
+
+### Meta Information Tags
+
+| **Tag**   | **Example**                                                   | **Attributes**                       |
+|-----------|---------------------------------------------------------------|-------------------------------------|
+| **`<base>`** | `<base href="https://example.com/">`                         | `href`, `target`                    |
+| **`<meta>`** | `<meta name="description" content="Description of the page">` | `name`, `content`, `http-equiv`     |
+| **`<link>`** | `<link rel="icon" href="favicon.ico">`                       | `rel`, `href`, `type`               |
+| **`<title>`** | `<title>Page Title</title>`                                 | N/A                                 |
+
