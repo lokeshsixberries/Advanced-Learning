@@ -78,7 +78,7 @@
 | `git push --tags`                                    | Push all tags to a remote repository                        |
 | `git config --list`                                  | List all configuration settings                             |
 | `git config --global core.editor <editor>`            | Set the default text editor                                 |
-| `git config --global core.autocrlf <true|false>`      | Set automatic line ending handling                          |
+| `git config --global core.autocrlf`      | Set automatic line ending handling                          |
 | `git config --global alias.<alias-name> <command>`     | Create a shortcut for a command                             |
 | `git reset --soft <commit>`                           | Reset index but keep working directory changes              |
 | `git reset --mixed <commit>`                          | Reset index and working directory to match a commit         |
