@@ -207,3 +207,52 @@
 | `git reflog expire --expire=now --all`                | Expire all reflog entries immediately                        |
 | `git clean -n`                                       | Perform a dry-run of `git clean` to see what would be removed |
 | `git worktree prune`                                 | Remove stale worktrees                                      |
+| `git ls-files --stage`                                | Show the staged contents of files                           |
+| `git ls-files --others`                               | Show untracked files                                       |
+| `git ls-files --deleted`                              | Show deleted files in the working directory                 |
+| `git log --all --graph --decorate --oneline`          | Show a graphical representation of all commits              |
+| `git log --follow <file>`                             | Follow the history of a file across renames                 |
+| `git log --follow --patch <file>`                      | Show changes to a file including history and renames        |
+| `git rebase --interactive --exec <command>`            | Execute a command after each commit in interactive rebase   |
+| `git remote set-url <remote> <new-url>`                | Change the URL of a remote repository                       |
+| `git remote set-branches <remote> <branch>`            | Set which branches to fetch from a remote                  |
+| `git remote show <remote>`                            | Show detailed information about a remote                   |
+| `git submodule add <repo-url> [path]`                  | Add a new submodule                                        |
+| `git submodule update --remote`                        | Update all submodules to their latest commit                |
+| `git submodule sync`                                 | Synchronize submodule URLs with the repository configuration |
+| `git submodule status`                               | Show the status of submodules                               |
+| `git tag -l <pattern>`                                | List tags matching a pattern                               |
+| `git tag -a <tag-name> -m "message"`                   | Create an annotated tag with a message                      |
+| `git tag -d <tag-name>`                               | Delete a tag                                               |
+| `git worktree add <path> <branch>`                     | Add a new worktree for a branch                             |
+| `git worktree list`                                  | List all worktrees                                         |
+| `git worktree remove <path>`                          | Remove a worktree                                          |
+| `git rerere clear`                                    | Clear the recorded resolutions                             |
+| `git rerere diff`                                     | Show the difference that would be applied to a conflicted file |
+| `git rerere status`                                   | Show the current state of the rerere cache                  |
+| `git archive --format=<format> --output=<file>`       | Create an archive of the repository                         |
+| `git config --global http.proxy <proxy-url>`           | Set a proxy URL for HTTP connections                        |
+| `git config --global https.proxy <proxy-url>`          | Set a proxy URL for HTTPS connections                       |
+| `git config --global --unset http.proxy`               | Unset the HTTP proxy URL                                    |
+| `git config --global --unset https.proxy`              | Unset the HTTPS proxy URL                                   |
+| `git config --global credential.helper <helper>`       | Set a credential helper to cache or store credentials       |
+| `git config --list --show-origin`                     | Show the configuration along with the origin of each setting |
+| `git reset --keep <commit>`                           | Reset to a commit but keep changes in the working directory |
+| `git diff --no-index <file1> <file2>`                 | Compare two files that are not in the index                  |
+| `git diff --staged`                                   | Show differences between the staged and working directory   |
+| `git log --reverse`                                  | Show the commit history in reverse order                    |
+| `git log --pretty=oneline`                             | Show each commit on a single line                           |
+| `git log --pretty=fuller`                              | Show detailed commit information including author and committer |
+| `git log --format=%b`                                 | Show only the body of commit messages                       |
+| `git log --format=%s`                                 | Show only the subject of commit messages                    |
+| `git log --format=%an`                                | Show only the author name                                  |
+| `git log --format=%ae`                                | Show only the author email                                 |
+| `git log --format=%cn`                                | Show only the committer name                               |
+| `git log --format=%ce`                                | Show only the committer email                              |
+| `git log --format=%cd`                                | Show only the committer date                               |
+| `git log --format=%cr`                                | Show only the committer relative date                      |
+| `git rebase --exec <command>`                         | Run a command on each commit during a rebase                |
+| `git log --format="%h %d %s" --decorate`              | Show commits with decorated branch and tag names            |
+| `git log --format="%H %d %s" --decorate`              | Show full commit hash with decorated branch and tag names   |
+| `git reflog expire --expire=now --all`                | Expire all reflog entries immediately                       |
+| `git clean -n -d`                                    | Show what would be removed by `git clean` including directories |
