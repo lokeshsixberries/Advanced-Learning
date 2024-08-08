@@ -256,3 +256,75 @@
 | `git log --format="%H %d %s" --decorate`              | Show full commit hash with decorated branch and tag names   |
 | `git reflog expire --expire=now --all`                | Expire all reflog entries immediately                       |
 | `git clean -n -d`                                    | Show what would be removed by `git clean` including directories |
+| `git switch <branch>`                                 | Switch branches or restore working tree                     |
+| `git restore <file>`                                 | Restore working directory files from the index               |
+| `git restore --staged <file>`                         | Unstage a file from the index                               |
+| `git switch -C <branch>`                              | Create a new branch and switch to it                        |
+| `git restore --source=<commit> <file>`                 | Restore file from a specific commit                         |
+| `git restore --worktree <file>`                        | Restore file to the working directory                       |
+| `git restore --staged --worktree <file>`               | Restore file in both index and working directory            |
+| `git sparse-checkout`                                 | Manage sparse-checkout, allowing partial checkout            |
+| `git sparse-checkout set <pathspec>`                   | Enable sparse-checkout with a specific path specification    |
+| `git sparse-checkout disable`                          | Disable sparse-checkout                                      |
+| `git sparse-checkout add <pathspec>`                   | Add additional paths to sparse-checkout                     |
+| `git sparse-checkout remove <pathspec>`                | Remove paths from sparse-checkout                            |
+| `git for-each-ref`                                    | Iterate over references in the repository                    |
+| `git switch --orphan <branch>`                         | Create a new orphan branch, discarding history               |
+| `git worktree add <path> <branch>`                     | Add a worktree linked to a branch                           |
+| `git worktree prune`                                  | Remove stale worktrees                                      |
+| `git diff --find-renames`                             | Detect renamed files when comparing changes                 |
+| `git diff --find-copies`                              | Detect copied files when comparing changes                  |
+| `git diff --word-diff`                                | Show word-by-word differences                               |
+| `git diff --color-words`                              | Highlight words changed in the diff                          |
+| `git show --stat`                                    | Show statistics of changes introduced by a commit           |
+| `git reflog delete <reference>`                        | Delete reflog entries for a specific reference              |
+| `git config --global user.signingkey <key>`            | Set a GPG key for signing commits                            |
+| `git config --global commit.gpgSign true`              | Enable automatic signing of commits                         |
+| `git fetch --deepen=<n>`                             | Fetch a specific number of commits from a remote             |
+| `git fetch --shallow-since=<date>`                     | Fetch commits more recent than a specified date             |
+| `git fetch --shallow-exclude=<commit>`                 | Fetch commits excluding those reachable from a specific commit |
+| `git pull --rebase=interactive`                        | Perform an interactive rebase during pull                   |
+| `git rebase --exec <command>`                          | Run a command after each commit in a rebase                 |
+| `git cherry-pick --no-commit <commit>`                 | Apply changes from a commit without committing               |
+| `git cherry-pick --skip`                               | Skip the current commit in a cherry-pick operation          |
+| `git commit --allow-empty-message`                     | Allow committing with an empty commit message               |
+| `git commit --no-verify`                               | Bypass pre-commit and commit-msg hooks                       |
+| `git merge --no-ff`                                  | Merge commits with a merge commit, even if fast-forward is possible |
+| `git merge --ff-only`                                | Allow merging only if it can be fast-forwarded               |
+| `git reset --keep <commit>`                            | Reset to a commit but keep changes in the working directory  |
+| `git clean -d -n`                                    | Dry run of `git clean -d` to see what would be removed       |
+| `git clean -f -d -x`                                 | Remove all untracked files and directories, including ignored files |
+| `git gc --auto`                                       | Automatically run garbage collection when needed            |
+| `git gc --aggressive`                                | Perform a more aggressive garbage collection                |
+| `git fsck --full`                                     | Perform a full repository integrity check                    |
+| `git for-each-ref --format=<format>`                   | Customize the output format when iterating over references  |
+| `git tag --sort=<key>`                                | Sort tags according to a specified key                        |
+| `git notes`                                          | Add or view notes attached to commits                        |
+| `git filter-repo`                                    | A faster alternative to `git filter-branch` for rewriting history |
+| `git rerere`                                          | Record and reuse resolved conflicts                          |
+| `git rerere clear`                                    | Clear the rerere cache                                      |
+| `git rerere status`                                   | Show the current status of the rerere cache                   |
+| `git cat-file -p <object>`                            | Pretty-print the contents of an object                        |
+| `git log --merges`                                    | Show only merge commits                                    |
+| `git log --no-decorate`                               | Show log entries without ref names                          |
+| `git reflog expire --expire=<date>`                    | Expire reflog entries older than the specified date         |
+| `git update-index --assume-unchanged <file>`           | Mark a file as assumed unchanged                            |
+| `git update-index --no-assume-unchanged <file>`        | Undo assume unchanged marking                              |
+| `git diff --word-diff-regex=<regex>`                   | Show word differences using a custom regex                   |
+| `git tag -f <tag-name>`                               | Force-create or update an existing tag                      |
+| `git tag -d <tag-name>`                               | Delete a tag                                               |
+| `git tag -l <pattern>`                                | List tags matching a pattern                               |
+| `git worktree list`                                  | List all worktrees                                         |
+| `git worktree remove <path>`                          | Remove a worktree                                          |
+| `git diff --ignore-space-change`                      | Ignore changes in whitespace when comparing                  |
+| `git diff --ignore-all-space`                         | Ignore all white space when comparing                        |
+| `git diff --ignore-blank-lines`                       | Ignore changes where lines are only whitespace               |
+| `git diff --color-words`                              | Highlight word changes in the diff                           |
+| `git diff --patience`                                | Use the patience algorithm for diff                          |
+| `git diff --histogram`                               | Use the histogram algorithm for diff                         |
+| `git archive --format=<format> --output=<file>`       | Create an archive of files from a named tree                 |
+| `git fsck --full`                                     | Perform a full repository integrity check                    |
+| `git commit --verbose`                                | Show the diff of changes being committed                     |
+| `git commit --quiet`                                 | Suppress output except errors                                |
+| `git log --format="%H %d %s" --decorate`              | Show full commit hash with decorated branch and tag names   |
+| `git log --format="%h %d %s" --decorate`              | Show abbreviated commit hash with decorated branch and tag names |
